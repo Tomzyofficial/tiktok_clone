@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" >  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="fontawesome-6.4.0-web/css/fontawesome.css">
+  <link rel="stylesheet" href="fontawesome-6.4.0-web/css/brands.css">
+  <link rel="stylesheet" href="fontawesome-6.4.0-web/css/solid.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <title>Document</title>
+  <style>
+    .active {
+      border-bottom: 1px solid black;
+    }
+    ul {overflow: auto;  
+       scrollbar-width: none; /* for firefox */
+       -ms-overflow-style: none;} /* for IE and Edge */
+    ul::-webkit-scrollbar {display: none;} /* for chrome, safari, and Opera  */
+  </style>
+</head>
+<body class="bg-white">
+  <header>
+    <div class="wrapper">
+      <div class="inner_wrapper"></div>
+    </div>
+  </header>
+  <header>
+    <div class="flex justify-around my-4">
+      <div>
+        <span><i class="fa fa-user-plus text-black"></i></span>
+      </div>
+      <div>
+        <span><p>Chukwuebuka &#128170;<i class="fa fa-chevron-down"></i></p></span>
+      </div>
+      <div>
+        <ul class="flex space-x-5">
+          <li><a href="javascript:void()"><i class="fa fa-eye"></i></a></li>
+          <li><i class="fa fa-bars"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="mt-[30px]">
+        <img src="./images/profile-img.PNG" class="rounded-full w-[130px] h-[130px] block relative">
+        <p><a href="javascript:void()"><span><svg fill="white" viewBox="0 0 20 20" width="2.2em" height="2.2em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x14ctfv x1qx5ct2 xw4jnvo" style="background-color: rgb(94, 252, 244); padding:5px; border-radius: 50%; position: absolute; border: 3px solid white; transform: translate(90px, -30px)"><g fill-rule="evenodd" transform="translate(-446 -350)"><g fill-rule="nonzero"><path d="M95 201.5h13a1 1 0 1 0 0-2H95a1 1 0 1 0 0 2z" transform="translate(354.5 159.5)"></path><path d="M102.5 207v-13a1 1 0 1 0-2 0v13a1 1 0 1 0 2 0z" transform="translate(354.5 159.5)"></path></g></g></svg></span></a></p>
+        <div class="pt-[10px] block">
+          <p class="text-black font-bold">@_tomzyofficial</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <ul class="inline-flex space-x-5">
+        <li><span class="flex flex-col mx-5 font-bold">26</span> Follwoing</li>
+        <li><span class="flex flex-col mx-5 font-bold">31</span>Followers</li>
+        <li><span class="flex flex-col mx-1 font-bold">27</span>Likes</li>
+      </ul>
+    </div>
+    <div class="my-[10px]">
+      <div class="flex justify-center">
+        <div class="max-w-auto h-10 border border-1 border-zinc-400">
+          <a href="javascript:void()" class="flex py-1 mx-4">Edit profile</a>
+        </div>
+      </div>
+      <div class="my-[10px] mx-10">
+        <p class="text-center">Be positive. Mind your business. Know your shit. And pray to God?? <span>&#9996; &#9996;</span></p>
+
+      </div>
+    </div>
+  </header>
+  <!-- profile uploaded images, private videos, favorite videos, viewed contents section -->
+  <section>
+    <div class="shrink-0">
+      <div class="flex justify-around text-neutral-400 border-1 border-b border-slate-300 py-0.8">
+        <!-- account image toggler -->
+        <button class="first w-[22px]"><span class="line-through" style="font-size: 18px;">|||</span></button>
+        <!-- private video toggler -->
+        <button class="second w-[22px]" style="font-size: 18px;"><span><i class="fa fa-lock"></i></span></button>
+        <!-- favorite video toggler -->
+        <button class="third w-[22px]"><span class="relative" style="font-size: 18px;"><i class="fa fa-bookmark"></i></span><span class="absolute" style="font-size: 13px; transform: translate(-5px, 6px);"><i class="fa fa-eye-slash"></i></span></button>
+        <!-- viewed contents toggler -->
+       <button class="fourth w-[22px]"><span class="relative" style="font-size: 18px;"><i class="fa fa-heart"></i></span><span class="absolute" style="font-size: 13px; transform: translate(-5px, 6px);"><i class="fa fa-eye-slash"></i></span></button>
+      </div>
+      <!-- account images -->
+      <div class="hidden h-[100dvh] w-screen shrink-0 images">
+        <div class="grid grid-cols-3 sm:grid sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+          <img src="./images/profile-img.PNG" class="w-[230px] h-40 shrink-0 border-r-[2px] border-white sm:w-[100%] md:w-[100%] md:h-60">
+          <img src="./images/50.PNG" class="w-[230px] h-40 shrink-0  border-r-[2px] border-white sm:w-[100%] md:w-[100%] md:h-60">
+          <img src="./images/24.PNG" class="w-[230px] h-40 shrink-0 sm:w-[100%] sm:border-r-[2px] md:w-[100%] md:h-60 md:border-r-[2px]">
+          <img src="./images/55.PNG" class="w-[230px] h-40 shrink-0 border-t-[2px] border-r-[2px] sm:w-[100%] sm:border-t-[0px] sm:border-r-[0px] md:w-[100%] md:h-60 md:border-t-[0px] md:border-r-[2px]">
+          <img src="./images/51.PNG" class="w-[230px] h-40 shrink-0 border-t-[2px] border-r-[2px] sm:w-[100%] md:w-[100%] md:h-60 md:border-t-[0px] md:border-r-[0px] lg:border-r-[2px]">
+          <img src="./images/37.PNG" class="w-[230px] h-40 shrink-0 border-t-[2px] sm:w-[100%] sm:border-r-[2px] sm:border-t-[2px] md:w-[100%] md:border-r-[2px] md:border-t-[2px] md:h-60 md:border-r-[2px] lg:border-r-[0px] lg:border-t-[0px]">
+          <img src="./images/17.jpg" class="w-[230px] h-40 shrink-0 border-t-[2px] sm:w-[100%] md:w-[100%] md:h-60">
+        </div>
+      </div>
+      <!-- private videos -->
+      <div class="hidden h-[100dvh] private">
+        <div class="text-center my-10">
+          <p class="font-md text-md text-black pb-4">Your private videos</p>
+          <p class="text-sm text-slate-500 font-sm">To make your videos only visible to you, set them to "private in settings"</p>
+        </div>
+      </div>
+      <!-- favorite videos -->
+      <div class="hidden h-[100dvh] favorite">
+        <div class="flex border-1 border-b border-slate-300">
+          <ul class="flex ms-1 me-1 p-3 text-slate-500 text-sm font-sm space-x-4">
+            <li>Videos<span class="mx-1">0</span></li>
+            <li>Collection<span class="mx-1">0</span></li>
+            <li>Sounds<span class="mx-1">0</span></li>
+            <li>Effects<span class="mx-1">0</span></li>
+            <li>Places<span class="mx-1">0</span></li>
+            <li>Comments<span class="mx-1">0</span></li>
+            <li>Questions<span class="mx-1">0</span></li>
+            <li>Hashtag<span class="mx-1">0</span></li>
+            <li>Products<span class="mx-1">0</span></li>
+          </ul>
+        </div>
+        <div class="text-center my-10">
+          <p class="font-md text-md text-black pb-4">Favorite videos</p>
+          <p class="text-sm text-slate-500 font-sm">Your favorite videos will apear here</p>
+        </div>
+      </div>
+      <!-- viewed, liked contents -->
+      <div class="hidden h-[100dvh] viewed">
+        <div class="grid grid-cols-3 sm:grid sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
+          <div>
+            <img src="./images/18.PNG" class="relative w-[230px] h-40 shrink-0 border-r-[2px] border-white sm:w-[100%] md:w-[100%] md:h-60">
+            <span class="absolute text-white font-sm" style="transform: translate(5px, -25px)">19.3K</span>
+          </div>
+          <div>
+            <img src="./images/19.PNG" class="relative w-[230px] h-40 shrink-0  border-r-[2px] border-white sm:w-[100%] md:w-[100%] md:h-60">
+            <span class="absolute text-white font-sm" style="transform: translate(5px, -25px)">10K</span>
+          </div>
+          <div>
+            <img src="./images/20.PNG" class="w-[230px] h-40 shrink-0 sm:w-[100%] sm:border-r-[2px] md:w-[100%] md:h-60 md:border-r-[2px]">
+            <span class="absolute text-white font-sm" style="transform: translate(5px, -25px)">5K</span>
+          </div>
+          <div>
+            <img src="./images/21.PNG" class="w-[230px] h-40 shrink-0 border-t-[2px] border-r-[2px] sm:w-[100%] sm:border-t-[0px] md:w-[100%] md:h-60 md:border-t-[0px]">
+            <span class="absolute text-white font-sm" style="transform: translate(5px, -25px)">20K</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="w-full py-2 grid grid-cols-5 space-x-5 bg-white text-zinc-300 text-sm  border-t-[1px] border-zinc-300" style="position: fixed; bottom: 0;">
+    <div class="mx-4">
+      <p><a href="index.html"><span class="mx-1"><i class="fa fa-home" style="font-size: 30px;"></i></span> <br> Home</a></p>
+    </div>
+    <div class="mx-2">
+      <p><a href="javascript:void()"><span class="mx-1"><i class="fa fa-users" style="font-size: 30px;"></i></span><br>Friends</a></p>
+    </div>
+    <div class="mx-2 py-1">
+      <p><span><svg fill="white" viewBox="0 0 20 20" width="3.3em" height="2em" class="x1lliihq x1k90msu x2h7rmj x1qfuztq x14ctfv x1qx5ct2 xw4jnvo" style="background-color: black; padding:3px 3px; border-radius: 10px; border-right: 4px solid red; border-left: 4px solid lightgreen;"><g fill-rule="evenodd" transform="translate(-446 -350)"><g fill-rule="nonzero"><path d="M95 201.5h13a1 1 0 1 0 0-2H95a1 1 0 1 0 0 2z" transform="translate(354.5 159.5)"></path><path d="M102.5 207v-13a1 1 0 1 0-2 0v13a1 1 0 1 0 2 0z" transform="translate(354.5 159.5)"></path></g></g></svg></span></p>
+    </div>
+    <div>
+      <p><a href="chats.html"><i class="fa-solid fa-message" style="font-size: 30px;"></i><br> Chats</a></p>
+    </div>
+    <div>
+      <p><a href="profile.html" class="visited:text-black"><span class="mx-2"><i class="fa fa-user" style="font-size: 30px;"></i></span> <br> Profile</a></p>
+    </div>
+  </footer>
+  <!-- site script -->
+  <script src="./app.js"></script>
+  <!-- profile images onload function -->
+  <script>
+    window.onload = function() {
+    const images = document.querySelector('.images');
+    images.style.display = 'block';
+    document.querySelector('.first .line-through').style.color = 'black';
+    document.querySelector('.first').classList.add('active')
+    }
+  </script>
+</body>
+</html>
